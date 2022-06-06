@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    body {
+        background-image: url("background.jpg");
+    }
+    
+    .App {
+        text-align: center;
+    }
+    /* -----------------HEADER---------------- */
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    h1 {
+        font-size: 90px;
+        margin: 15px;
+        border: 1px black;
+        color: rgb(13, 170, 13);
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: black;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 160px;
+        text-align: center;
+        text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
+    }
+    
+    .tic {
+        transform: rotate(-20deg);
+        margin-top: 40px;
+    }
+    
+    .toe {
+        transform: rotate(20deg);
+        margin-top: 40px;
+    }
+    /* --------------------------------------------------------------- */
+    
+    .gameSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 140px;
+    }
+    
+    .square {
+        height: 100px;
+        width: 100px;
+        border: 2px solid rgb(75, 75, 75);
+        background: none;
+        cursor: pointer;
+        outline: none;
+        font-size: 60px;
+    }
+    
+    .square:hover {
+        opacity: 0.7
+    }
+    
+    .playField {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: -3px 3px 8px rgb(0, 0, 0);
+    }
+    
+    .playerO {
+        position: absolute;
+        left: 190px;
+        font-size: 40px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: rgb(26, 13, 170);
+        text-shadow: 0px 2px 5px rgb(26, 13, 170);
+    }
+    
+    .playerX {
+        position: absolute;
+        right: 190px;
+        font-size: 40px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: rgb(170, 13, 13);
+        text-shadow: 0px 2px 5px rgb(255, 0, 0);
+    }
+    
+    .clearBtn {
+        background: none;
+        color: rgb(13, 170, 13);
+        height: 60px;
+        border-radius: 5px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 25px;
+        margin-top: 20px;
+        box-shadow: -3px 3px 10px rgb(0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    @media (min-width: 230px) and (max-width:355px) {
+        h1 {
+            font-size: 45px;
+            margin: 12px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        h2 {
+            font-size: 30px;
+            top: 110px;
+        }
+        .gameSection {
+            width: 100%;
+            margin-top: 160px;
+        }
+        .square {
+            height: 80px;
+            width: 80px;
+            font-size: 60px;
+        }
+        .square:hover {
+            opacity: 0.7
+        }
+        .playField {
+            width: 240px;
+            height: 240px;
+        }
+        .playerO {
+            left: 5px;
+            font-size: 25px;
+            top: 190px;
+        }
+        .playerX {
+            right: 5px;
+            top: 190px;
+            font-size: 25px;
+        }
+    }
+    
+    @media (min-width: 355px) and (max-width:500px) {
+        h1 {
+            font-size: 60px;
+            margin: 15px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        h2 {
+            font-size: 30px;
+            top: 120px;
+        }
+        .gameSection {
+            width: 100%;
+            margin-top: 160px;
+        }
+        .square {
+            height: 100px;
+            width: 100px;
+            font-size: 60px;
+        }
+        .square:hover {
+            opacity: 0.7
+        }
+        .playField {
+            width: 300px;
+            height: 300px;
+        }
+        .playerO {
+            left: 10px;
+            font-size: 30px;
+            top: 190px;
+        }
+        .playerX {
+            right: 15px;
+            top: 190px;
+            font-size: 30px;
+        }
+    }
+    
+    @media (min-width: 500px) and (max-width:1000px) {}
