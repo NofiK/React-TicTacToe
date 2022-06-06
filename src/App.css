@@ -18,15 +18,15 @@
         margin: 15px;
         border: 1px black;
         color: rgb(13, 170, 13);
-        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 0.2px;
         -webkit-text-stroke-color: black;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Coming Soon', cursive;
         text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
     }
     
     h2 {
         font-size: 40px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Coming Soon', cursive;
         margin: 0;
         position: absolute;
         left: 0;
@@ -84,7 +84,7 @@
         position: absolute;
         left: 190px;
         font-size: 40px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Coming Soon', cursive;
         color: rgb(26, 13, 170);
         text-shadow: 0px 2px 5px rgb(26, 13, 170);
     }
@@ -93,7 +93,7 @@
         position: absolute;
         right: 190px;
         font-size: 40px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Coming Soon', cursive;
         color: rgb(170, 13, 13);
         text-shadow: 0px 2px 5px rgb(255, 0, 0);
     }
@@ -103,13 +103,13 @@
         color: rgb(13, 170, 13);
         height: 60px;
         border-radius: 5px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Coming Soon', cursive;
         font-weight: bold;
         padding: 10px;
         font-size: 25px;
         margin-top: 20px;
         box-shadow: -3px 3px 10px rgb(0, 0, 0);
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 0.2px;
         -webkit-text-stroke-color: black;
     }
     
